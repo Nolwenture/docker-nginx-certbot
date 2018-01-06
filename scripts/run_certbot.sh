@@ -24,7 +24,7 @@ done
 auto_enable_configs
 
 # Finally, tell nginx to reload the configs
-kill -HUP $NGINX_PID
+kill -HUP "$(cat /var/run/nginx.pid)"
 
 set +x
 exit $exit_code
