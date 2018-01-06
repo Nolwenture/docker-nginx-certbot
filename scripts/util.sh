@@ -61,5 +61,5 @@ get_certificate() {
     echo "Getting certificate for domain $1 on behalf of user $2"
     certbot certonly --agree-tos --keep -n --text --email $2 --server \
         https://acme-v01.api.letsencrypt.org/directory -d $1 --http-01-port 1337 \
-        --standalone --standalone-supported-challenges http-01 --debug
+        --standalone --preferred-challenges http-01 --debug
 }
