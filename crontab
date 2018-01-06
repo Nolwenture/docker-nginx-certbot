@@ -1,1 +1,1 @@
-0 */12 * * * root sh /scripts/run_certbot.sh
+0 2 */1 * * root sh /scripts/run_certbot.sh
